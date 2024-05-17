@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +7,22 @@
     <title>Investa</title>
 </head>
 <body>
-    <header>
-        <img src="images/icons8-three-dots-96.png" alt="1" class="big-img m-small">
-        <img src="images/icons8-rectangle-96.png" alt="2" class="m-small">
-        <img src="images/icons8-double-left-60.png" alt="3" class="m-small">
-        <img src="images/icons8-double-right-48.png" alt="4" class="m-right">
-        <img src="images/icons8-security-shield-64.png" alt="5" class="m-small">
-        <div class="title m-right">
-            <p>investa.com</p>
-            <img src="images/icons8-return-60.png" alt="6">
-        </div>
-        <img src="images/icons8-upload-50.png" alt="7" class="m-small">
-        <img src="images/icons8-plus-48.png" alt="8" class="m-small">
-        <img src="images/icons8-copy-48.png" alt="9" class="m-small">
-    </header>
-
     <div class="main-container">
         <div class="menu-container">
             <div class="menu-title">
-                <img src="images/icons8-invest-96.png" alt="10" class="big-img">
-                <p>Investa</p>
+                <div class="menu-title-first">
+                    <img src="images/icons8-autumn-48.png" alt="10" class="big-img">
+                    <p>Investa</p>
+                </div>           
+                <nav>
+                    <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
             </div>
-            <div class="menu">
+            <div class="menu off-screen-menu">
                 <div class="menu-item">
                     <img src="images/icons8-overview-96.png" alt="11">
                     <a href="#" class="menu-link">Overview</a>
@@ -83,18 +77,203 @@
                 </div>
             </div>
 
-            <div class="switch">
-                <p>text text text</p>
+            <div id="theme-switcher" class="switch">
+                <a href="#" class="switch-item">
+                <div class="light">
+                    <img src="images/icons8-sun-50.png" alt="" id="sun">
+                    <p>Light</p>
+                </div>
+                </a>
+                <a href="#" class="switch-item">
+                <div class="dark">
+                    <img src="images/icons8-moon-50.png" alt="" id="moon">
+                    <p>Dark</p>
+                </div>
+                </a>
             </div>
         </div>
 
         <div class="content-container">
+            <div class="cards">
+                <div class="first-card">
+                    <div class="card-title">
+                        <div class="card-title-img"><img src="images/icons8-apple-logo-67.png" alt="19"></div>
+                        <div class="card-title-txt">
+                        <p>AAPL</p>
+                        <p class="card-title-txt-light">Apple Inc</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>$15,238.00</p>
+                        <p class="increment-right"><span class="increment">5.90%</span> vs last month</p>
+                    </div>
+                </div>
 
+                <div class="second-card">
+                    <div class="card-title">
+                        <div class="card-title-img"><img src="images/icons8-google-logo-48.png" alt="20"></div>
+                        <div class="card-title-txt">
+                        <p>GOGL</p>
+                        <p class="card-title-txt-light">Google Corp</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>$6,842.00</p>
+                        <p class="increment-right"><span class="increment">5.90%</span> vs last month</p>
+                    </div>
+                </div>
+
+                <div class="third-card">
+                    <div class="card-title">
+                        <div class="card-title-img"><img src="images/icons8-spotify-logo-48.png" alt="21"></div>
+                        <div class="card-title-txt">
+                        <p>SPOT</p>
+                        <p class="card-title-txt-light">Spotify Technology SA</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>$12,238.00</p>
+                        <p class="decrement-right"><span class="decrement">5.90%</span> vs last month</p>
+                    </div>
+                </div>
+
+                <div class="fourth-card">
+                    <div class="card-title">
+                        <div class="card-title-img"><img src="images/icons8-twitter-logo-48.png" alt="22"></div>
+                        <div class="card-title-txt">
+                        <p>TWTR</p>
+                        <p class="card-title-txt-light">Twitter Inc</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p>$55,238.00</p>
+                        <p class="increment-right"><span class="increment">5.90%</span> vs last month</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="important-cards">
+                <div class="portfolio-values">
+                    <div class="portfolio-title">
+                        <p>Portfolio Values</p>
+                        <div class="dropdown">
+                            <a href="#" onclick="dropDownFunction()" class="dropdown-btn"><img src="images/icons8-three-dots-24.png" alt="23"></a>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">Details</a>
+                                <a href="#">About</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-price">
+                        <div class="big-price"><p>$17,580.00</p></div>
+                        <div class="big-increment">5.90%</div>
+                    </div>
+
+                    <div class="simple-txt">
+                        <p>You profits is 4,790.00 in this month.</p>
+                        <p class="simple-txt-light">That's the best result in the last three months.</p>
+                    </div>
+
+                    <div class="portfolio-btn">
+                        <a href="#" class="port-link">Worst Performance</a>
+                        <a href="#" class="port-link">Top Performance</a>
+                    </div>
+
+                    <div class="last-port-item">
+                        <img src="images/icons8-stars-50.png" alt="24" class="star-img">
+                        <p>Here's to improve your portfolio and understanding how investing works.</p>
+                        <img src="images/icons8-greater-than-64.png" alt="25" class="greater-than">
+                    </div>
+                </div>
+
+                <div class="statistics">
+                    <div class="statistics-title">
+                        <div class="statistics-title-txt"><p>Statistics</p></div>
+                        <div class="statistics-title-btn">
+                            <p>Month</p> 
+                            <img src="images/icons8-sort-down-24.png" alt="26">
+                        </div>
+                    </div>
+
+                    <canvas id="myChart" style="width: 100%; max-height: 280px;"></canvas>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <div class="table-title">
+                    <p>My Stock</p>
+                    <img src="images/icons8-three-dots-24.png" alt="">
+                </div>
+                <div class="table">
+                    <table border=1 frame=void rules=rows>
+                        <tr>
+                            <td>Name Stock</td>
+                            <td>Invest Date</td>
+                            <td>Volume</td>
+                            <td>Change</td>
+                            <td>Price/stock</td>
+                            <td id="normal">Number of lots</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="logo">
+                                    <div class="card-title-img"><img src="images/icons8-apple-logo-67.png" alt="19"></div>
+                                    <div class="card-title-txt">
+                                    <p>AAPL</p>
+                                    <p class="card-title-txt-light">Apple Inc</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Feb 22,2024</td>
+                            <td>7.10B</td>
+                            <td><div class="big-increment">5.90%</div></td>
+                            <td>$19,30</td>
+                            <td>250,000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="logo">
+                                    <div class="card-title-img"><img src="images/icons8-twitter-logo-48.png" alt="22"></div>
+                                    <div class="card-title-txt">
+                                    <p>TWTR</p>
+                                    <p class="card-title-txt-light">Twitter Inc</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Feb 17,2024</td>
+                            <td>2.10B</td>
+                            <td><div class="big-decrement">2.90%</div></td>
+                            <td>$23,30</td>
+                            <td>530,000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="logo">
+                                    <div class="card-title-img"><img src="images/icons8-spotify-logo-48.png" alt="21"></div>
+                                    <div class="card-title-txt">
+                                    <p>SPOT</p>
+                                    <p class="card-title-txt-light">Spotify Technology SA</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Feb 20,2024</td>
+                            <td>7.10B</td>
+                            <td><div class="big-increment">5.90%</div></td>
+                            <td>$19,30</td>
+                            <td>250,000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
 
 
+      
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="index.js"></script>
+    
 </body>
 </html>
